@@ -1,0 +1,55 @@
+
+body {
+    width: 100%;
+}
+
+p {
+    max-width: 80%;
+}
+
+nav {
+    justify-content: space-between;
+    margin-top: 5%;
+    padding-bottom: 70px;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    justify-content: column;
+}
+
+nav li,
+nav a {
+    margin-right: 0;
+}
+
+.center-card {
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    margin: 10% auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.submit-btn {
+    width: 60%;
+    margin: 5% auto;
+}
+
+#skills table {
+    width: 80%;
+    font-size: 8px;
+}
+
+
