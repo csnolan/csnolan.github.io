@@ -1,0 +1,256 @@
+@media print {
+    .screen_only {
+        display: none;
+    }
+}
+
+/* CSS for global styles */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    background-color: rgba(20, 30, 40, 0.9);
+    margin: 0;
+    margin-bottom: 10%;
+    width: 100%;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+li {
+    font-size: 18px
+}
+
+/* CSS for Navigation Bar */
+
+nav {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(20, 30, 40, 0.3);
+    height: 80px;
+    padding: 0;
+    margin: 0 auto;
+    
+}
+
+nav ul {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+
+nav li {
+    float: left;
+}
+
+nav a:hover {
+    font-weight: bolder;
+}
+
+/* CSS for center image and quick-info */
+
+
+
+.center-card {
+    margin: 0 auto;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+}
+
+.center-card img {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.center-card a {
+    width: 30%;
+    display: inline-block;
+    margin: 10px auto;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: #0077b5;
+    color: whitesmoke;
+    padding: 8px 16px;
+    border: 4px solid #0077b5;
+    border-radius: 4px;
+}
+
+
+/* CSS for table */
+
+#skills table {
+    width: 80%;
+    margin: 2em auto;
+    border-collapse: collapse;
+    border: 4px solid whitesmoke;
+    border-style: inset;
+}
+
+#skills th,
+#skills td {
+    text-align: left;
+    padding: 10px;
+    border: 4px solid whitesmoke;
+    font-size: large;
+}
+
+/* CSS for forms */
+
+.form-container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+.form-container h2 {
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+#message,
+#email,
+#name {
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.submit-btn {
+    font-size: 18px;
+    width: 50%;
+    display: inline-block;
+    margin: 10px auto;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: #0077b5;
+    color: whitesmoke;
+    padding: 8px 16px;
+    border: 4px solid #0077b5;
+    border-radius: 4px;
+}
+
+.link-btn {
+    font-size: 18px;
+    width: 30%;
+    display: inline-block;
+    margin: 10px auto;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: #0077b5;
+    color: whitesmoke;
+    padding: 8px 16px;
+    border: 4px solid #0077b5;
+    border-radius: 4px;
+}
+
+.container {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: calc(50% - 5%);
+    height: auto;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 5%;
+    background-color: rgba(20, 30, 40, 0.3);
+}
+
+.box p,
+.box li {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.boxvid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box2 {
+    background-color: rgba(255, 255, 255, 0);
+    margin: 8px;
+    flex-wrap: wrap;
+}
+
+.box2 p {
+    text-align: left;
+    width: 100%;
+}
+
+.video-caption {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+@keyframes flash {
+    0% {
+        background-color: inherit;
+    }
+
+    50% {
+        background-color: rgb(20, 90, 110);
+    }
+
+    100% {
+        background-color: inherit;
+    }
+}
+
+#education:target,
+#work-experience:target,
+#skills:target,
+#projects:target,
+#interests:target,
+#favorites:target {
+    animation: flash 1s ease-in-out;
+}
