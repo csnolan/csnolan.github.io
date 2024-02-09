@@ -1,0 +1,45 @@
+@media (max-width: 1600px) {
+    .favs-container {
+        flex-direction: row;
+    }
+
+
+
+    #favorites {
+        min-width: 95%;
+        flex: 0 0 100%;
+        margin-right: 5%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .submit-btn {
+        font-size: 16px;
+    }
+
+    .row>* {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+
+}
+
+@media print {
+
+    .navbar,
+    #contact,
+    .submit-btn,
+    .video,
+    #projects,
+    #contactMe {
+        display: none;
+    }
+
+    .card-body {
+        margin: 0;
+        padding: 0;
+    }
+
+}
